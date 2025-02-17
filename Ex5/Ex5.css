@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.dad {
+    display: flex;
+    gap: 20px;
+}
+
+.mom {
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.child {
+    background-color: purple;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+

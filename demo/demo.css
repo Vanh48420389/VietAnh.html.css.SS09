@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.big-box {
+    background-color: #2C3E50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.small-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px; /* Giữ chiều rộng cố định để không bị tràn */
+    gap: 10px;
+}
+
+.small-box {
+    background-color: #2C3E50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px; /* Chia đều cho 2 cột */
+    height: 45px; /* Giữ chiều cao phù hợp */
+    font-size: 16px;
+    font-weight: bold;
+}
