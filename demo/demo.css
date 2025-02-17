@@ -1,51 +1,36 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: white;
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 .container {
+    background-color: pink;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    /* flex-wrap: wrap; */
+    height: 600px;
+    gap: 50px;
 }
 
-.row {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.big-box {
-    background-color: #2C3E50;
+.container .child {
+    background-color: hotpink;
+    width: 200px;
+    height: 200px;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: 100px;
-    font-size: 20px;
-    font-weight: bold;
+    text-align: center;
+    line-height: 200px;
+    border: 10px solid white;
 }
+.container .child:nth-child(1){
+    /* flex-grow: 1; */
+    flex-shrink: 10;
+    flex-basis: 100px;
 
-.small-boxes {
-    display: flex;
-    flex-wrap: wrap;
-    width: 320px; /* Giữ chiều rộng cố định để không bị tràn */
-    gap: 10px;
 }
+.container .child:nth-child(3){
+     flex-grow: 1;
 
-.small-box {
-    background-color: #2C3E50;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px; /* Chia đều cho 2 cột */
-    height: 45px; /* Giữ chiều cao phù hợp */
-    font-size: 16px;
-    font-weight: bold;
 }
